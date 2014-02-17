@@ -1,0 +1,7 @@
+EDIT Post Page <br>
+<%= form_for( @post, :url => {:controller => 'posts', :action => 'update'}) do |f| %>
+    <p> Title:</br> <%= f.text_field :title %> </p>
+    <p> Content:</br> <%= f.text_field :content %></p>
+    <p> Category:</br> <%= f.select( :category, [["Personals", "Personals"], ["Buying", "Buying"], ["Selling", "Selling"]]) %> </p>
+    <%= f.submit :post %>
+<% end %>

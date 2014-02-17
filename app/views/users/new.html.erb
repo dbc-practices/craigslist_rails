@@ -1,0 +1,6 @@
+sign-up page <br>
+<%= form_for(:user, :url => {:controller => 'users', :action => 'create'}) do |f| %>
+    <p> Email:</br> <%= f.text_field :email%> </p>
+    <p> Password:</br> <%= f.password_field :password%></p>
+    <%= f.submit :Signup %>
+<% end %>

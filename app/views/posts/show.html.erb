@@ -1,0 +1,6 @@
+<p>Post Title: <%= @post.title %></p>
+<p>Post Content: <%= @post.content %></p>
+<p>Post Category: <%= @post.category %></p>
+
+<%= link_to "edit", edit_post_path(@post) %>
+<%= link_to "delete", post_path(@post), method: :delete, data: { confirm: "Are you sure?" } %>

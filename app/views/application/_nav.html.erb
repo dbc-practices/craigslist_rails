@@ -1,0 +1,14 @@
+<div>
+
+  <ul>
+    <% if session[:user_id] %>
+      <li>Welcome, <%= session[:user_id] %></li>
+      <li><%= link_to "Sign-out", logout_path %></li>
+      <li><%= link_to "New Post", new_post_path %></li>
+    <% else %>
+      <li><%= link_to "Sign-up", new_user_path %></li>
+      <li><%= link_to "Sign-in", new_session_path %></li>
+    <% end %>
+  </ul>
+
+</div>

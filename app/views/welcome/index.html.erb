@@ -1,0 +1,5 @@
+<h1>Below you will see a list of all the recent posts:</h1>
+
+<% @posts.each do |post| %>
+  <p><%= link_to post.title, post_path(post) %></p>
+<%end%>
