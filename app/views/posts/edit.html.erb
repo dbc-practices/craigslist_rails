@@ -1,4 +1,5 @@
 EDIT Post Page <br>
+                             <%# user path helpers %>
 <%= form_for( @post, :url => {:controller => 'posts', :action => 'update'}) do |f| %>
     <p> Title:</br> <%= f.text_field :title %> </p>
     <p> Content:</br> <%= f.text_field :content %></p>
